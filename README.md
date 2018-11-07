@@ -6,7 +6,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. (Required) Admin Password Brute Force
   - [ ] Summary: Used WPScan and wordlist to brute force admin account password. 
     - Vulnerability types: Weak password
     - Tested in version: 4.2
