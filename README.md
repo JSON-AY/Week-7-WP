@@ -11,7 +11,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: Weak password
     - Tested in version: 4.2
     - Fixed in version: n/a
-  - [ ] GIF Walkthrough: <img src="https://imgur.com/a/GLKfJ6L" width="800">
+  - [ ] GIF Walkthrough: [Imgur Link](https://imgur.com/a/GLKfJ6L)
   - [ ] Steps to recreate: Ran the following script:(wpscan --url http://wpdistillery.vm --wordlist ~/rockyo.txt --username admin)
   - [ ] Affected source code: n/a
     - [Word Press Brute Force](https://www.wpwhitesecurity.com/strong-wordpress-passwords-wpscan/)
