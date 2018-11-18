@@ -26,7 +26,7 @@ Time spent: 10 hours spent in total
   - Dragged file into following page (http://wpdistillery.vm/wp-admin/media-new.php) 
   - XSS pop-up occurs
   - [ ] Affected source code:
-    - [Link 1](https://hackerone.com/reports/203515)
+    - [hackerone link](https://hackerone.com/reports/203515)
 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
