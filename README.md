@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: 5 hours spent in total
+Time spent: 10 hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -15,15 +15,18 @@ Time spent: 5 hours spent in total
   - [ ] Steps to recreate: Ran the following script:("wpscan --url http://wpdistillery.vm --wordlist ~/rockyo.txt --username admin")
   - [ ] Affected source code: n/a
     - [Word Press Brute Force](https://www.wpwhitesecurity.com/strong-wordpress-passwords-wpscan/)
-2. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+2. Large File Upload Error XSS
+  - [ ] Summary: This attack is acheived by uploading a 20Mb or larger file with the name of it reflecting a XSS prompt.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.15
+  - [ ] GIF Walkthrough: https://imgur.com/a/Z6RKAGC
+  - [ ] Steps to recreate: Downloaded a large photo file (23Mb). 
+  - Renamed the file to (Dinosaurs secret life<img src=x onerror=alert(200)>.png) 
+  - Dragged file into following page (http://wpdistillery.vm/wp-admin/media-new.php) 
+  - XSS pop-up occurs
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://hackerone.com/reports/203515)
 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
