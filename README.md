@@ -12,7 +12,8 @@ Time spent: 10 hours spent in total
     - Tested in version: 4.2
     - Fixed in version: n/a
   - [ ] GIF Walkthrough: [Imgur Link](https://imgur.com/a/GLKfJ6L)
-  - [ ] Steps to recreate: Ran the following script:("wpscan --url http://wpdistillery.vm --wordlist ~/rockyo.txt --username admin")
+  - [ ] Steps to recreate: 
+  - Ran the following script:("wpscan --url http://wpdistillery.vm --wordlist ~/rockyo.txt --username admin")
   - [ ] Affected source code: n/a
     - [Word Press Brute Force](https://www.wpwhitesecurity.com/strong-wordpress-passwords-wpscan/)
 2. Large File Upload Error XSS
@@ -20,23 +21,26 @@ Time spent: 10 hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.15
-  - [ ] GIF Walkthrough: https://imgur.com/a/Z6RKAGC
-  - [ ] Steps to recreate: Downloaded a large photo file (23Mb). 
+  - [ ] GIF Walkthrough: [Imgur Link] (https://imgur.com/a/Z6RKAGC)
+  - [ ] Steps to recreate: 
+  - Downloaded a large photo file (23Mb). 
   - Renamed the file to (Dinosaurs secret life<img src=x onerror=alert(200)>.png) 
   - Dragged file into following page (http://wpdistillery.vm/wp-admin/media-new.php) 
   - XSS pop-up occurs
   - [ ] Affected source code:
     - [hackerone link](https://hackerone.com/reports/203515)
-3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+3. WordPress Stored XSS
+  - [ ] Summary: Individuals includes XSS string when making a post as either a contributor or editor. When user moves mouse over the link, they're prompted with an XSS dialog pop-up. 
     - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.3
+  - [ ] GIF Walkthrough: [Imgur Link] (https://imgur.com/a/ltvHWbh)
   - [ ] Steps to recreate: 
+  - Make post as author or contributor
+  - Include the following string in the post (<a href="</a><a title=" onmouseover=alert('test')  ">link</a>)
+  - When user places their cursor over the link, they're prompted with a pop up XSS dialog.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-
+    - [klikki Oy](https://klikki.fi/adv/wordpress3.html)
 ## Assets
 
 List any additional assets, such as scripts or files
