@@ -37,7 +37,7 @@ Time spent: 10 hours spent in total
   - [ ] GIF Walkthrough: [Imgur Link] (https://imgur.com/a/ltvHWbh)
   - [ ] Steps to recreate: 
   - Make post as author or contributor
-  - Include the following string in the post ("<a href="</a><a title=" onmouseover=alert('test')  ">link</a>")
+  - Include the following string in the post (<a href="</a><a title=" onmouseover=alert('test')  ">link</a>))
   - When user places their cursor over the link, they're prompted with a pop up XSS dialog.
   - [ ] Affected source code:
     - [klikki Oy](https://klikki.fi/adv/wordpress3.html)
